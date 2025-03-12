@@ -30,12 +30,47 @@ print(a.lower())
 list = ["hello","all","world","all","hello"]
 print(list)
 print(type(list))
+print("*************************************************")
 list2 = [1, 5, 7, 9, 3,1,2,1]
+list2.append(10)
 print(list2)
+print("*************************************************")
 list3 = [True, False, False]
+list3[1] = True
 print(list3)
+print("*************************************************")
 print(type(list3))
+print("*************************************************")
+list.extend(list3)
+print(list)
+print("*************************************************")
 
+for i in range(len(list3)):
+    print(list3[i])
+print("*************************************************")
+# while loop
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+print("*************************************************")
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+print(newlist)
+
+print("*************************************************")
+abc= ["dog","cat","lion","tiger"]
+copy1 = abc.copy()
+print(copy1)
+
+copy1.reverse()
+print(copy1)
 # List is a collection which is ordered and changeable. Allows duplicate members.
 # Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 # Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
