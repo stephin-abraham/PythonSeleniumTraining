@@ -29,3 +29,7 @@ time.sleep(3)
 driver.find_element(By.XPATH,"//div[@class='checkbox checkbox-primary']").click()
 driver.find_element(By.XPATH,"//*[@value='Purchase']").click()
 time.sleep(3)
+alertMessage = driver.find_element(By.CLASS_NAME,"alert-success").text
+print(alertMessage)
+assert "Success!" in alertMessage
+driver.close()
